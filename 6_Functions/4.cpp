@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+bool isprime(int n){
+    if (n==1){
+        return false;
+    }for(int i =2;i<=n;i++)//i*i<=n
+    {
+       if(n%i==0)
+    return false;
+    }
+    return true;
+}
+
+int main(){
+    cout<<isprime(15)<<endl;
+    return 0;
+
+}
+
+//ANS:=
+//0
